@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class Q4673_1 {
 	public static void main(String[] args) {
 
+		long startTime = new Date().getTime();
 		List<Integer> list = new ArrayList<>();
 		for (int i = 1; i <10001; ++i) {
 
@@ -40,5 +42,7 @@ public class Q4673_1 {
 				System.out.println(i);
 			}
 		}
+		long endTime = new Date().getTime();
+		System.out.println(endTime - startTime + "ms");
 	}
 }
