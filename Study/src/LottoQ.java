@@ -79,7 +79,7 @@ public class LottoQ {
 
 			int th = 8 - minHit;
 			if (th == 2) {
-				th =1;
+				th = 1;
 			}
 			if (th < 6) {
 
@@ -98,7 +98,7 @@ public class LottoQ {
 
 			int th = 8 - maxHit;
 			if (th == 2) {
-				th =1;
+				th = 1;
 			}
 			if (th < 6) {
 
@@ -109,9 +109,5 @@ public class LottoQ {
 				System.out.println("max : out");
 			}
 		}
-
-
-
-
 	}
 }
