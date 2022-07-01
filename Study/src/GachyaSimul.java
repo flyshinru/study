@@ -3,9 +3,9 @@ public class GachyaSimul {
 	public static void main(String[] args) {
 
 		// 確率
-		double kakuritu = 4;
+		double kakuritu = 1.5;
 		// 枚数
-		int maisuu = 100;
+		int maisuu = 8;
 		// 試行数
 		int kaisuu = 10000;
 
