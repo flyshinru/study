@@ -68,9 +68,6 @@ public class LottoQ {
 		}
 		lotto += bonus;
 
-		System.out.println("choice : " + input);
-		System.out.println("lotto : " + lotto);
-
 		if (minHit == 5 && inputList.contains(bonus)) {
 
 			System.out.println("min : 2等");
