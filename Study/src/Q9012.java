@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Q9012 {
@@ -10,28 +12,32 @@ public class Q9012 {
 		for (int j = 0; j < max; j++) {
 
 			String input = in.nextLine();
-			String temp = new String(input);
+			List<String> tempList = new ArrayList<>();
+			String[] inputs = input.split("");
 			boolean result = true;
-			for (int i = 0; i < temp.length();) {
+			for (String ch : inputs) {
 
-				char l = temp.charAt(temp.length()-1);
-				if ('(' == l) {
+				if ("(".equals(ch)) {
 
-					result = false;
-					break;
-				}
-
-				char c = temp.charAt(i);
-				if ('(' == c) {
-
-					int idx = temp.lastIndexOf(')');
-					temp = temp.substring(1, idx);
+					tempList.add(ch);
 				}
 				else {
 
-					result = false;
-					break;
+					if (tempList.size() == 0) {
+
+						result = false;
+						break;
+					}
+					else {
+
+						tempList.remove(0);
+					}
 				}
+			}
+
+			if (tempList.size() != 0) {
+
+				result = false;
 			}
 
 			if (result) {
